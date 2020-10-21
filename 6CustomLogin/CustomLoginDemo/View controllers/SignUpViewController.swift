@@ -109,6 +109,8 @@ class SignUpViewController: UIViewController {
         
     }
     
+    
+    
     func showError(_ message:String) {
         errorLabel.text = message
         errorLabel.alpha=1
@@ -116,10 +118,13 @@ class SignUpViewController: UIViewController {
     
     func transitionToHome() {
         // or i could yust go HomeVC
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        guard let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController else { return }
         
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
+//        view.window?.rootViewController = homeViewController
+//        view.window?.makeKeyAndVisible()
+        let navVC = UINavigationController(rootViewController: homeViewController)
+        navVC.modalPresentationStyle = .fullScreen
+        self.present(navVC, animated: true)
         
     }
 }

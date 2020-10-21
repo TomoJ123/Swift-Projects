@@ -15,5 +15,7 @@ struct Constants {
         //easier like this,we dont need to type anymore HomeVC
         
         static let homeViewController = "HomeVC"
+        static let viewController = "ViewCon"
+        static let CarViewController = "CarVC"
     }
 }

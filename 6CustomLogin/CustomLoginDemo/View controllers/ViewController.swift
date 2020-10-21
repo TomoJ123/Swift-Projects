@@ -8,7 +8,7 @@
 
 import UIKit
 import AVKit
-// jos za napravit !! ubacit back botune i singout botun, i popravit crte ove u login isign up
+// napraviti log out button koji je vec bia napravljen !! i dalje windowe !!!
 class ViewController: UIViewController {
     
     var videoPlayer:AVPlayer?
@@ -24,10 +24,17 @@ class ViewController: UIViewController {
         setUpElements()
     }
     
+    //when View Controller is appeared,there is no navigation
     override func viewWillAppear(_ animated: Bool) {
         //set up video in the background
-        
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         setUpVideo()
+    }
+    //after viewcontroller it will appear in another controllers
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func setUpElements() {

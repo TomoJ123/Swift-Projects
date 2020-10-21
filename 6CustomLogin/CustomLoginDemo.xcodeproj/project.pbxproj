@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		103A0F6C252351AB00AEB42C /* loginback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 103A0F6B252351AB00AEB42C /* loginback.mp4 */; };
+		102AAAB325322F9600F1F41B /* CreateCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AAAB225322F9600F1F41B /* CreateCarViewController.swift */; };
+		102AAAB52532375700F1F41B /* loginback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 102AAAB42532375700F1F41B /* loginback.mp4 */; };
 		1063CCA425177DF4006D7622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063CCA325177DF4006D7622 /* AppDelegate.swift */; };
 		1063CCA625177DF4006D7622 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063CCA525177DF4006D7622 /* SceneDelegate.swift */; };
 		1063CCA825177DF4006D7622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063CCA725177DF4006D7622 /* ViewController.swift */; };
@@ -25,7 +26,8 @@
 
 /* Begin PBXFileReference section */
 		017D011DEFFF1B34D91C4690 /* Pods-CustomLoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-CustomLoginDemo/Pods-CustomLoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		103A0F6B252351AB00AEB42C /* loginback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginback.mp4; sourceTree = "<group>"; };
+		102AAAB225322F9600F1F41B /* CreateCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarViewController.swift; sourceTree = "<group>"; };
+		102AAAB42532375700F1F41B /* loginback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginback.mp4; sourceTree = SOURCE_ROOT; };
 		1063CCA025177DF4006D7622 /* CustomLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1063CCA325177DF4006D7622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1063CCA525177DF4006D7622 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +61,7 @@
 		103A0F6825234CE700AEB42C /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				103A0F6B252351AB00AEB42C /* loginback.mp4 */,
+				102AAAB42532375700F1F41B /* loginback.mp4 */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -105,6 +107,7 @@
 				1063CCA725177DF4006D7622 /* ViewController.swift */,
 				1063CCB725177E9E006D7622 /* SignUpViewController.swift */,
 				1063CCBB25177EDF006D7622 /* HomeViewController.swift */,
+				102AAAB225322F9600F1F41B /* CreateCarViewController.swift */,
 				103A0F6825234CE700AEB42C /* Media */,
 			);
 			path = "View controllers";
@@ -200,7 +203,7 @@
 				10AA934C2520A7C500D5F562 /* GoogleService-Info.plist in Resources */,
 				1063CCAD25177DFC006D7622 /* Assets.xcassets in Resources */,
 				1063CCAB25177DF4006D7622 /* Main.storyboard in Resources */,
-				103A0F6C252351AB00AEB42C /* loginback.mp4 in Resources */,
+				102AAAB52532375700F1F41B /* loginback.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +260,7 @@
 				1063CCA425177DF4006D7622 /* AppDelegate.swift in Sources */,
 				1063CCBF25179F8D006D7622 /* Utilities.swift in Sources */,
 				1063CCB825177E9E006D7622 /* SignUpViewController.swift in Sources */,
+				102AAAB325322F9600F1F41B /* CreateCarViewController.swift in Sources */,
 				1063CCBA25177EBD006D7622 /* LoginViewController.swift in Sources */,
 				1063CCA625177DF4006D7622 /* SceneDelegate.swift in Sources */,
 				1063CCBC25177EDF006D7622 /* HomeViewController.swift in Sources */,

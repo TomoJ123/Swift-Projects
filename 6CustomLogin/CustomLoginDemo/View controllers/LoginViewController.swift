@@ -44,13 +44,14 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
     @IBAction func loginTapped(_ sender: Any) {
         // Validate all fields and this down in else because its force unwrapping
         
         //cleaned versions of email and pass
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+
         //Sign in the user
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil {
@@ -60,12 +61,16 @@ class LoginViewController: UIViewController {
             }
             else {
                 //Transition to home screen
-                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                
-                self.view.window?.rootViewController = homeViewController
-                self.view.window?.makeKeyAndVisible()
+                guard let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController else { return }
+//
+//                self.view.window?.rootViewController = homeViewController
+//                self.view.window?.makeKeyAndVisible()
+        
+                let navVC = UINavigationController(rootViewController: homeViewController)
+                navVC.modalPresentationStyle = .fullScreen
+                self.present(navVC, animated: true)
             }
-        }
+     }
     }
     
     

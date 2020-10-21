@@ -8,10 +8,7 @@ target 'CustomLoginDemo' do
   # Pods for CustomLoginDemo
 
 
-  
-pod 'Firebase/Analytics'
-pod 'Firebase/Auth'
-
-pod 'FirebaseFirestoreSwift'
-
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Firestore'
 end
