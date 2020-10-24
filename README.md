@@ -1,2 +1,2 @@
 # Swift-Projects
-hackingwithswift
+hackingwithswift and other projects. :)
