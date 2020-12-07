@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1009C6BA257D45AC002AE31C /* GameDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009C6B9257D45AC002AE31C /* GameDescriptionViewController.swift */; };
+		1009C6BF257D59B4002AE31C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009C6BE257D59B3002AE31C /* Game.swift */; };
+		1009C6C3257D8B63002AE31C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009C6C2257D8B63002AE31C /* Extensions.swift */; };
+		1027B4FE257C21B90033F20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B4FD257C21B90033F20F /* AppDelegate.swift */; };
+		1027B500257C21B90033F20F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B4FF257C21B90033F20F /* SceneDelegate.swift */; };
+		1027B502257C21B90033F20F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B501257C21B90033F20F /* ViewController.swift */; };
+		1027B505257C21B90033F20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1027B503257C21B90033F20F /* Main.storyboard */; };
+		1027B507257C21BA0033F20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1027B506257C21BA0033F20F /* Assets.xcassets */; };
+		1027B50A257C21BA0033F20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1027B508257C21BA0033F20F /* LaunchScreen.storyboard */; };
+		1027B513257C25690033F20F /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B512257C25690033F20F /* Genres.swift */; };
+		1027B518257C4FC10033F20F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B517257C4FC10033F20F /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1009C6B9257D45AC002AE31C /* GameDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDescriptionViewController.swift; sourceTree = "<group>"; };
+		1009C6BE257D59B3002AE31C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		1009C6C2257D8B63002AE31C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1027B4FA257C21B90033F20F /* TastProfico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TastProfico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1027B4FD257C21B90033F20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1027B4FF257C21B90033F20F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1027B501257C21B90033F20F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1027B504257C21B90033F20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1027B506257C21BA0033F20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1027B509257C21BA0033F20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1027B50B257C21BA0033F20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1027B512257C25690033F20F /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
+		1027B517257C4FC10033F20F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1027B4F7257C21B80033F20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1027B4F1257C21B80033F20F = {
+			isa = PBXGroup;
+			children = (
+				1027B4FC257C21B90033F20F /* TastProfico */,
+				1027B4FB257C21B90033F20F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1027B4FB257C21B90033F20F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1027B4FA257C21B90033F20F /* TastProfico.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1027B4FC257C21B90033F20F /* TastProfico */ = {
+			isa = PBXGroup;
+			children = (
+				1027B4FD257C21B90033F20F /* AppDelegate.swift */,
+				1027B4FF257C21B90033F20F /* SceneDelegate.swift */,
+				1027B501257C21B90033F20F /* ViewController.swift */,
+				1027B517257C4FC10033F20F /* DetailViewController.swift */,
+				1009C6B9257D45AC002AE31C /* GameDescriptionViewController.swift */,
+				1027B512257C25690033F20F /* Genres.swift */,
+				1009C6BE257D59B3002AE31C /* Game.swift */,
+				1009C6C2257D8B63002AE31C /* Extensions.swift */,
+				1027B503257C21B90033F20F /* Main.storyboard */,
+				1027B506257C21BA0033F20F /* Assets.xcassets */,
+				1027B508257C21BA0033F20F /* LaunchScreen.storyboard */,
+				1027B50B257C21BA0033F20F /* Info.plist */,
+			);
+			path = TastProfico;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1027B4F9257C21B80033F20F /* TastProfico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1027B50E257C21BA0033F20F /* Build configuration list for PBXNativeTarget "TastProfico" */;
+			buildPhases = (
+				1027B4F6257C21B80033F20F /* Sources */,
+				1027B4F7257C21B80033F20F /* Frameworks */,
+				1027B4F8257C21B80033F20F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TastProfico;
+			productName = TastProfico;
+			productReference = 1027B4FA257C21B90033F20F /* TastProfico.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1027B4F2257C21B80033F20F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1027B4F9257C21B80033F20F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 1027B4F5257C21B80033F20F /* Build configuration list for PBXProject "TastProfico" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1027B4F1257C21B80033F20F;
+			productRefGroup = 1027B4FB257C21B90033F20F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1027B4F9257C21B80033F20F /* TastProfico */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1027B4F8257C21B80033F20F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1027B50A257C21BA0033F20F /* LaunchScreen.storyboard in Resources */,
+				1027B507257C21BA0033F20F /* Assets.xcassets in Resources */,
+				1027B505257C21B90033F20F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1027B4F6257C21B80033F20F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1027B502257C21B90033F20F /* ViewController.swift in Sources */,
+				1027B4FE257C21B90033F20F /* AppDelegate.swift in Sources */,
+				1009C6BF257D59B4002AE31C /* Game.swift in Sources */,
+				1009C6C3257D8B63002AE31C /* Extensions.swift in Sources */,
+				1027B518257C4FC10033F20F /* DetailViewController.swift in Sources */,
+				1027B500257C21B90033F20F /* SceneDelegate.swift in Sources */,
+				1027B513257C25690033F20F /* Genres.swift in Sources */,
+				1009C6BA257D45AC002AE31C /* GameDescriptionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1027B503257C21B90033F20F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1027B504257C21B90033F20F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1027B508257C21BA0033F20F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1027B509257C21BA0033F20F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1027B50C257C21BA0033F20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1027B50D257C21BA0033F20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1027B50F257C21BA0033F20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TastProfico/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackingwithSwift.TastProfico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1027B510257C21BA0033F20F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TastProfico/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackingwithSwift.TastProfico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1027B4F5257C21B80033F20F /* Build configuration list for PBXProject "TastProfico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1027B50C257C21BA0033F20F /* Debug */,
+				1027B50D257C21BA0033F20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1027B50E257C21BA0033F20F /* Build configuration list for PBXNativeTarget "TastProfico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1027B50F257C21BA0033F20F /* Debug */,
+				1027B510257C21BA0033F20F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1027B4F2257C21B80033F20F /* Project object */;
+}
