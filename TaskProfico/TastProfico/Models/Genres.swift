@@ -15,6 +15,7 @@ struct Game: Codable {
 struct Genre: Codable {
     let name: String
     let games: [Game]
+    let id: Int
 }
 
 struct Genres: Codable {

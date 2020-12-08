@@ -11,7 +11,7 @@ class GenresSelectionViewController: UITableViewController {
     var response: Genres?
     let defaults = UserDefaults.standard
     var selectedGenres = UserDefaults.standard.stringArray(forKey: "SavedGenreArray") ?? []
-    var dictGamesToShow =  [String:Int]()
+    var genresID = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,18 +42,15 @@ class GenresSelectionViewController: UITableViewController {
     
     @objc func buttonTapped() {
         selectedGenres.removeAll()
-        dictGamesToShow.removeAll()
         if tableView.indexPathsForSelectedRows?.isEmpty != nil {
             for items in tableView.indexPathsForSelectedRows! {
                 selectedGenres.append(response!.results[items.row].name)
-                for game in response!.results[items.row].games {
-                    dictGamesToShow.updateValue(game.id, forKey: game.name)
-                }
+                genresID.append(response!.results[items.row].id)
             }
             defaults.set(selectedGenres,forKey: "SavedGenreArray")
-            defaults.set(dictGamesToShow,forKey: "SavedGameDict")
+            defaults.set(genresID,forKey: "GenresID")
+            NotificationCenter.default.post(name: .selectedGenresChanged, object: nil, userInfo: nil)
         }
-        NotificationCenter.default.post(name: .selectedGenresChanged, object: nil, userInfo: nil)
         dismiss(animated: true)
     }
     
@@ -71,4 +68,6 @@ class GenresSelectionViewController: UITableViewController {
         return cell
     }
 }
+
+
 

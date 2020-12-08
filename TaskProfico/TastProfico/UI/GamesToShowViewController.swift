@@ -8,8 +8,8 @@
 import UIKit
 
 class GamesToShowViewController: UITableViewController {
-    var dictGamesToShow = UserDefaults.standard.dictionary(forKey: "SavedGameDict")
-    var gameNames = [String]()
+    var selectedGenreIds = UserDefaults.standard.array(forKey: "GenresID") as? [Int] ?? []
+    var games = [Game]()
     
     
     override func viewDidLoad() {
@@ -19,8 +19,10 @@ class GamesToShowViewController: UITableViewController {
         self.navigationItem.hidesBackButton = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(buttonTapped))
         
-        if dictGamesToShow?.isEmpty == nil {
+        if selectedGenreIds.count == 0 {
             performSegue(withIdentifier: "present", sender: self)
+        } else {
+            fetchGames()
         }
     }
     @objc func buttonTapped() {
@@ -28,28 +30,51 @@ class GamesToShowViewController: UITableViewController {
     }
     
     @objc func onDidReceiveData(_ notification: Notification) {
-        dictGamesToShow = UserDefaults.standard.dictionary(forKey: "SavedGameDict")
-        tableView.reloadData()
+        selectedGenreIds = UserDefaults.standard.array(forKey: "GenresID") as! [Int]
+        fetchGames()
+        
     }
     
+    func fetchGames() {
+            guard var urlComps = URLComponents(string: "https://api.rawg.io/api/games") else { return }
+            let genreIds = selectedGenreIds.map { String($0) }.joined(separator: ",")
+        
+            let querryItems = [URLQueryItem(name: "genres", value: genreIds), URLQueryItem(name: "page_size", value: "40")]
+            
+            urlComps.queryItems = querryItems
+            
+            guard let url = urlComps.url else { return }
+            
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                DispatchQueue.main.async {
+                    guard let data = data else { return }
+                    let jsonDecoder = JSONDecoder()
+                    do {
+                        let gamesResponse = try jsonDecoder.decode(GamesResponse.self, from: data)
+                        self.games = gamesResponse.results
+                        self.tableView.reloadData()
+                    } catch {
+                }
+                }
+            }
+            task.resume()
+        }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dictGamesToShow?.count ?? 1
+        return games.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        if let names = dictGamesToShow?.keys {
-            gameNames = Array(names)
-            cell.textLabel?.text = gameNames[indexPath.row]
-        }
+        let game = games[indexPath.row]
+        cell.textLabel?.text = game.name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let vc = storyboard.instantiateViewController(identifier: "GameDescriptionViewController") as? GameDescriptionViewController {
-            let name = gameNames[indexPath.row]
-            vc.gameID = dictGamesToShow?[name] as? Int
+            vc.gameID = games[indexPath.row].id
             navigationController?.pushViewController(vc, animated: true)
         }
     }

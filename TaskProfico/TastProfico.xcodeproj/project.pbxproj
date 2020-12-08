@@ -10,6 +10,7 @@
 		1009C6BA257D45AC002AE31C /* GameDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009C6B9257D45AC002AE31C /* GameDescriptionViewController.swift */; };
 		1009C6BF257D59B4002AE31C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009C6BE257D59B3002AE31C /* Game.swift */; };
 		1009C6C3257D8B63002AE31C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009C6C2257D8B63002AE31C /* Extensions.swift */; };
+		10130AF5257F84590035D8CC /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10130AF4257F84590035D8CC /* Games.swift */; };
 		1027B4FE257C21B90033F20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B4FD257C21B90033F20F /* AppDelegate.swift */; };
 		1027B500257C21B90033F20F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B4FF257C21B90033F20F /* SceneDelegate.swift */; };
 		1027B502257C21B90033F20F /* GenresSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B501257C21B90033F20F /* GenresSelectionViewController.swift */; };
@@ -26,6 +27,7 @@
 		1009C6B9257D45AC002AE31C /* GameDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDescriptionViewController.swift; sourceTree = "<group>"; };
 		1009C6BE257D59B3002AE31C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		1009C6C2257D8B63002AE31C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		10130AF4257F84590035D8CC /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		1027B4FA257C21B90033F20F /* TastProfico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TastProfico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1027B4FD257C21B90033F20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1027B4FF257C21B90033F20F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				1027B512257C25690033F20F /* Genres.swift */,
 				1009C6BE257D59B3002AE31C /* Game.swift */,
+				10130AF4257F84590035D8CC /* Games.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				1027B502257C21B90033F20F /* GenresSelectionViewController.swift in Sources */,
 				1027B4FE257C21B90033F20F /* AppDelegate.swift in Sources */,
 				1009C6BF257D59B4002AE31C /* Game.swift in Sources */,
+				10130AF5257F84590035D8CC /* Games.swift in Sources */,
 				1009C6C3257D8B63002AE31C /* Extensions.swift in Sources */,
 				1027B518257C4FC10033F20F /* GamesToShowViewController.swift in Sources */,
 				1027B500257C21B90033F20F /* SceneDelegate.swift in Sources */,
