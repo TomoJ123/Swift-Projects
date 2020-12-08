@@ -7,33 +7,32 @@
 
 import UIKit
 
-class DetailViewController: UITableViewController {
-    var dictToShow = UserDefaults.standard.dictionary(forKey: "SavedGameDict")
+class GamesToShowViewController: UITableViewController {
+    var dictGamesToShow = UserDefaults.standard.dictionary(forKey: "SavedGameDict")
     var gameNames = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        navigationItem.title = ""
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(buttonTapped))
         
-        if dictToShow?.isEmpty == nil {
-            performSegue(withIdentifier: "games", sender: self)
+        if dictGamesToShow?.isEmpty == nil {
+            performSegue(withIdentifier: "present", sender: self)
         }
     }
     @objc func buttonTapped() {
-        performSegue(withIdentifier: "games", sender: self)
+        performSegue(withIdentifier: "present", sender: self)
     }
 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dictToShow?.count ?? 1
+        return dictGamesToShow?.count ?? 1
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination.children.first as? ViewController {
+        if let vc = segue.destination.children.first as? GenresSelectionViewController {
             vc.genreSelectionChanged = { [weak self] in
-                self?.dictToShow = UserDefaults.standard.dictionary(forKey: "SavedGameDict")
+                self?.dictGamesToShow = UserDefaults.standard.dictionary(forKey: "SavedGameDict")
                 self?.tableView.reloadData()
             }
         }
@@ -41,7 +40,7 @@ class DetailViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        if let names = dictToShow?.keys {
+        if let names = dictGamesToShow?.keys {
             gameNames = Array(names)
             cell.textLabel?.text = gameNames[indexPath.row]
         }
@@ -52,8 +51,7 @@ class DetailViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let vc = storyboard.instantiateViewController(identifier: "Description") as? GameDescriptionViewController {
         let name = gameNames[indexPath.row]
-        vc.gameID = dictToShow?[name] as? Int
-        //print(dictToShow?[name] as? Int)
+        vc.gameID = dictGamesToShow?[name] as? Int
         navigationController?.pushViewController(vc, animated: true)
         }
     }

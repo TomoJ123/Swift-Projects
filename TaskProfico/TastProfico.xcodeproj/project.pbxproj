@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,14 @@
 		1009C6C3257D8B63002AE31C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009C6C2257D8B63002AE31C /* Extensions.swift */; };
 		1027B4FE257C21B90033F20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B4FD257C21B90033F20F /* AppDelegate.swift */; };
 		1027B500257C21B90033F20F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B4FF257C21B90033F20F /* SceneDelegate.swift */; };
-		1027B502257C21B90033F20F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B501257C21B90033F20F /* ViewController.swift */; };
+		1027B502257C21B90033F20F /* GenresSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B501257C21B90033F20F /* GenresSelectionViewController.swift */; };
 		1027B505257C21B90033F20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1027B503257C21B90033F20F /* Main.storyboard */; };
 		1027B507257C21BA0033F20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1027B506257C21BA0033F20F /* Assets.xcassets */; };
 		1027B50A257C21BA0033F20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1027B508257C21BA0033F20F /* LaunchScreen.storyboard */; };
 		1027B513257C25690033F20F /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B512257C25690033F20F /* Genres.swift */; };
-		1027B518257C4FC10033F20F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B517257C4FC10033F20F /* DetailViewController.swift */; };
+		1027B518257C4FC10033F20F /* GamesToShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027B517257C4FC10033F20F /* GamesToShowViewController.swift */; };
+		105F2B2D257E7F6600286DB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 105F2B2C257E7F6500286DB8 /* GoogleService-Info.plist */; };
+		699BC0FA2A5C76175A718D42 /* Pods_TastProfico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A4CBF7371E8F80BE2595F6 /* Pods_TastProfico.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +29,17 @@
 		1027B4FA257C21B90033F20F /* TastProfico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TastProfico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1027B4FD257C21B90033F20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1027B4FF257C21B90033F20F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1027B501257C21B90033F20F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1027B501257C21B90033F20F /* GenresSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresSelectionViewController.swift; sourceTree = "<group>"; };
 		1027B504257C21B90033F20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1027B506257C21BA0033F20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1027B509257C21BA0033F20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1027B50B257C21BA0033F20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1027B512257C25690033F20F /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
-		1027B517257C4FC10033F20F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1027B517257C4FC10033F20F /* GamesToShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesToShowViewController.swift; sourceTree = "<group>"; };
+		105F2B2C257E7F6500286DB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C2E83F2912C10F0BF78812A /* Pods-TastProfico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastProfico.debug.xcconfig"; path = "Target Support Files/Pods-TastProfico/Pods-TastProfico.debug.xcconfig"; sourceTree = "<group>"; };
+		5EFDB704E9A7BBB3897C960D /* Pods-TastProfico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastProfico.release.xcconfig"; path = "Target Support Files/Pods-TastProfico/Pods-TastProfico.release.xcconfig"; sourceTree = "<group>"; };
+		84A4CBF7371E8F80BE2595F6 /* Pods_TastProfico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TastProfico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699BC0FA2A5C76175A718D42 /* Pods_TastProfico.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +59,8 @@
 			children = (
 				1027B4FC257C21B90033F20F /* TastProfico */,
 				1027B4FB257C21B90033F20F /* Products */,
+				EB9318F391AC312CBE2E293D /* Pods */,
+				353D1D5907FDCB0223BC7E0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,20 +75,62 @@
 		1027B4FC257C21B90033F20F /* TastProfico */ = {
 			isa = PBXGroup;
 			children = (
+				1067FFE6257EEBFD00AD55E1 /* UI */,
+				1067FFE9257EEC2F00AD55E1 /* Models */,
+				1067FFEA257EEC4700AD55E1 /* Extensions */,
 				1027B4FD257C21B90033F20F /* AppDelegate.swift */,
 				1027B4FF257C21B90033F20F /* SceneDelegate.swift */,
-				1027B501257C21B90033F20F /* ViewController.swift */,
-				1027B517257C4FC10033F20F /* DetailViewController.swift */,
-				1009C6B9257D45AC002AE31C /* GameDescriptionViewController.swift */,
-				1027B512257C25690033F20F /* Genres.swift */,
-				1009C6BE257D59B3002AE31C /* Game.swift */,
-				1009C6C2257D8B63002AE31C /* Extensions.swift */,
 				1027B503257C21B90033F20F /* Main.storyboard */,
 				1027B506257C21BA0033F20F /* Assets.xcassets */,
 				1027B508257C21BA0033F20F /* LaunchScreen.storyboard */,
+				105F2B2C257E7F6500286DB8 /* GoogleService-Info.plist */,
 				1027B50B257C21BA0033F20F /* Info.plist */,
 			);
 			path = TastProfico;
+			sourceTree = "<group>";
+		};
+		1067FFE6257EEBFD00AD55E1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1027B501257C21B90033F20F /* GenresSelectionViewController.swift */,
+				1027B517257C4FC10033F20F /* GamesToShowViewController.swift */,
+				1009C6B9257D45AC002AE31C /* GameDescriptionViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1067FFE9257EEC2F00AD55E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1027B512257C25690033F20F /* Genres.swift */,
+				1009C6BE257D59B3002AE31C /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1067FFEA257EEC4700AD55E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1009C6C2257D8B63002AE31C /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		353D1D5907FDCB0223BC7E0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84A4CBF7371E8F80BE2595F6 /* Pods_TastProfico.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB9318F391AC312CBE2E293D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C2E83F2912C10F0BF78812A /* Pods-TastProfico.debug.xcconfig */,
+				5EFDB704E9A7BBB3897C960D /* Pods-TastProfico.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1027B50E257C21BA0033F20F /* Build configuration list for PBXNativeTarget "TastProfico" */;
 			buildPhases = (
+				A744C3A1F468E9AF69469B0C /* [CP] Check Pods Manifest.lock */,
 				1027B4F6257C21B80033F20F /* Sources */,
 				1027B4F7257C21B80033F20F /* Frameworks */,
 				1027B4F8257C21B80033F20F /* Resources */,
+				16B0498F338660C1628AB689 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1027B50A257C21BA0033F20F /* LaunchScreen.storyboard in Resources */,
+				105F2B2D257E7F6600286DB8 /* GoogleService-Info.plist in Resources */,
 				1027B507257C21BA0033F20F /* Assets.xcassets in Resources */,
 				1027B505257C21B90033F20F /* Main.storyboard in Resources */,
 			);
@@ -147,16 +201,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16B0498F338660C1628AB689 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TastProfico/Pods-TastProfico-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TastProfico/Pods-TastProfico-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TastProfico/Pods-TastProfico-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A744C3A1F468E9AF69469B0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TastProfico-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1027B4F6257C21B80033F20F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1027B502257C21B90033F20F /* ViewController.swift in Sources */,
+				1027B502257C21B90033F20F /* GenresSelectionViewController.swift in Sources */,
 				1027B4FE257C21B90033F20F /* AppDelegate.swift in Sources */,
 				1009C6BF257D59B4002AE31C /* Game.swift in Sources */,
 				1009C6C3257D8B63002AE31C /* Extensions.swift in Sources */,
-				1027B518257C4FC10033F20F /* DetailViewController.swift in Sources */,
+				1027B518257C4FC10033F20F /* GamesToShowViewController.swift in Sources */,
 				1027B500257C21B90033F20F /* SceneDelegate.swift in Sources */,
 				1027B513257C25690033F20F /* Genres.swift in Sources */,
 				1009C6BA257D45AC002AE31C /* GameDescriptionViewController.swift in Sources */,
@@ -303,6 +399,7 @@
 		};
 		1027B50F257C21BA0033F20F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2E83F2912C10F0BF78812A /* Pods-TastProfico.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +418,7 @@
 		};
 		1027B510257C21BA0033F20F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFDB704E9A7BBB3897C960D /* Pods-TastProfico.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
